@@ -1,0 +1,33 @@
+.container {
+  width: 100%;
+}
+
+.wrapper {
+  margin: 100px;
+}
+
+.image {
+  height: 30px;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+.navigationItems {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.headers {
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  font-size: 12px;
+  cursor: pointer;
+}

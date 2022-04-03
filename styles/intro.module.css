@@ -1,0 +1,28 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  max-width: 50rem;
+}
+
+.Mainparagraph {
+  font-size: 65px;
+  font-weight: 500;
+  font-style: italic;
+  margin-top: -30px;
+}
+
+.Subparagraph {
+  font-size: 30px;
+  font-weight: 500;
+  margin-top: -20px;
+}
+
+.subscribe {
+  width: 240px;
+  padding: 15px;
+  border: none;
+  border-radius: 25px;
+  background-color: rgb(15, 15, 15);
+  color: white;
+  font-size: 20px;
+}

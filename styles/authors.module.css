@@ -1,0 +1,14 @@
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.description {
+  text-align: right;
+  margin-top: 10px;
+}
