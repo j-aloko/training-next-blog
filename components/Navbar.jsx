@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "../styles/navbar.module.css";
 //import SearchIcon from "@mui/icons-material/Search";
+import Link from "next/link";
 
 function Navbar() {
   return (
@@ -8,11 +9,13 @@ function Navbar() {
       <div className={styles.wrapper}>
         <div className={styles.navbarLeft}>
           <div className={styles.logo}>
-            <img
-              src="https://genki.fueko.net/content/images/2021/04/genki.svg"
-              alt=""
-              className={styles.image}
-            />
+            <Link href="/">
+              <img
+                src="https://genki.fueko.net/content/images/2021/04/genki.svg"
+                alt=""
+                className={styles.image}
+              />
+            </Link>
           </div>
           <nav>
             <ul className={styles.navItems}>

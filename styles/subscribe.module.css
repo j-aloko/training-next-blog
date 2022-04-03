@@ -27,6 +27,7 @@
   background-color: rgb(206, 204, 204);
   border-radius: 35px;
   font-size: 18px;
+  outline: none;
 }
 
 .subscribe {
