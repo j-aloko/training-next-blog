@@ -3,7 +3,7 @@ import HomeLayout from "../components/HomeLayout";
 import styles from "../styles/Home.module.css";
 import Header from "./../components/Head";
 import Intro from "./../components/Intro";
-import { Featured, topAuthors, posts } from "./../Dummy";
+import { Featured, topAuthors } from "./../Dummy";
 import Authors from "./../components/Authors";
 import Posts from "./../components/Posts";
 
@@ -29,8 +29,12 @@ export default function Home({ Featured, posts, topAuthors }) {
   );
 }
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
+  const res = await fetch("http://localhost:3000/api/posts", {
+    method: "GET",
+  });
+
   return {
-    props: { Featured, posts, topAuthors },
+    props: { Featured, posts: res.data, topAuthors },
   };
 }

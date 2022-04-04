@@ -13,7 +13,7 @@ function Posts({ posts }) {
     <div className={styles.container}>
       <div className={styles.wrapper}>
         {posts.slice(0, load).map((p) => (
-          <Post key={p.id} post={p} />
+          <Post key={p._id} post={p} />
         ))}
       </div>
       {load !== posts.length && (
